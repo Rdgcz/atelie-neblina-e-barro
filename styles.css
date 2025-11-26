@@ -196,6 +196,7 @@ body {
   background: rgba(244, 240, 235, 0.92);
   border-bottom: 1px solid var(--cor-borda);
   transition: all var(--transicao-normal);
+  opacity: 0.75;
 }
 
 .header.scrolled {
