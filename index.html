@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ateliê Neblina &amp; Barro – Cerâmica Contemporânea em Cunha/SP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Ateliê Neblina &amp; Barro – peças de cerâmica contemporânea criadas entre as montanhas e a neblina de Cunha/SP. Peças orgânicas, feito à mão, em pequena escala.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header reveal-up">
+    <div class="container header__inner">
+      <a href="#topo" class="header__logo reveal-up">
+        <span class="logo__primary">Neblina &amp; Barro</span>
+        <span class="logo__tagline">Cerâmica Contemporânea</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menu">
+          <span class="nav__line"></span>
+          <span class="nav__line"></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li><a href="#processo" class="nav__link">Processo</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title reveal-up">Ateliê Neblina &amp; Barro</h1>
+        <p class="hero__subtitle reveal-up">Peças orgânicas criadas entre montanhas e silêncio.</p>
+        <a href="#sobre" class="btn btn--primary reveal-up" style="--delay:0.15s;">Conheça o ateliê</a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section section--sobre">
+      <div class="container section__inner section__inner--two-columns">
+
+        <div class="section__media">
+          <img
+            src="assets/img/sobre.png"
+            alt="Peças de cerâmica artesanais"
+            class="section__image reveal-left"
+          >
+        </div>
+
+        <div class="section__content reveal-right" style="--delay:0.1s;">
+          <h2 class="section__title">Sobre o ateliê</h2>
+          <p class="section__text">
+            Inspirado pela neblina constante das montanhas de Cunha, o Ateliê Neblina &amp; Barro cria peças que
+            valorizam o silêncio, o tempo e a imperfeição orgânica.
+          </p>
+          <p class="section__text">
+            A produção é inteiramente artesanal, do preparo da argila à queima em alta temperatura. O resultado
+            são objetos com presença, textura e identidade única.
+          </p>
+          <a href="#processo" class="link-underlined">Conheça o processo de criação</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section">
+      <div class="container">
+
+        <header class="section__header reveal-up">
+          <h2 class="section__title">Coleção – Peças e Texturas</h2>
+          <p class="section__subtitle">
+            Uma seleção de superfícies orgânicas, tons neutros e queimas naturais.
+          </p>
+        </header>
+
+        <div class="gallery">
+          <figure class="gallery__item reveal-up" style="--delay:0.0s;">
+            <img src="assets/img/peca-01.png" alt="" class="gallery__image">
+          </figure>
+          <figure class="gallery__item reveal-up" style="--delay:0.05s;">
+            <img src="assets/img/peca-02.png" alt="" class="gallery__image">
+          </figure>
+          <figure class="gallery__item reveal-up" style="--delay:0.1s;">
+            <img src="assets/img/peca-03.png" alt="" class="gallery__image">
+          </figure>
+          <figure class="gallery__item reveal-up" style="--delay:0.15s%;">
+            <img src="assets/img/peca-04.png" alt="" class="gallery__image">
+          </figure>
+          <figure class="gallery__item reveal-up" style="--delay:0.2s;">
+            <img src="assets/img/peca-05.png" alt="" class="gallery__image">
+          </figure>
+          <figure class="gallery__item reveal-up" style="--delay:0.25s;">
+            <img src="assets/img/peca-06.png" alt="" class="gallery__image">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section id="processo" class="section">
+      <div class="container">
+
+        <header class="section__header reveal-up">
+          <h2 class="section__title">Processo de criação</h2>
+          <p class="section__subtitle">Um caminho entre argila, gesto e fogo.</p>
+        </header>
+
+        <div class="steps">
+          <article class="step reveal-left" style="--delay:0.0s;">
+            <img src="assets/img/processo-01.png" alt="Argila natural" class="step__image">
+            <h3 class="step__title">01 — A argila</h3>
+            <p class="step__text">
+              Seleção de argilas naturais com textura fina e tons terrosos característicos da região.
+            </p>
+          </article>
+
+          <article class="step reveal-up" style="--delay:0.1s;">
+            <img src="assets/img/processo-02.png" alt="Torno de cerâmica" class="step__image">
+            <h3 class="step__title">02 — Torno e modelagem</h3>
+            <p class="step__text">
+              As peças ganham forma lentamente, respeitando ritmo e gesto. Imperfeições são parte da linguagem.
+            </p>
+          </article>
+
+          <article class="step reveal-right" style="--delay:0.2s;">
+            <img src="assets/img/processo-03.png" alt="Forno cerâmico" class="step__image">
+            <h3 class="step__title">03 — Queima e finalização</h3>
+            <p class="step__text">
+              No forno, a argila se transforma. Manchas e nuances surgem de forma natural e imprevisível.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="section">
+      <div class="container section__inner section__inner--two-columns">
+
+        <div class="section__content reveal-left">
+          <img src="assets/img/localizacao.png" alt="Estrada de terra entre montanhas" class="localizacao__image">
+          <h2 class="section__title">Cunha, São Paulo</h2>
+          <p class="section__text">
+            Entre montanhas e neblina, Cunha é um dos principais polos de cerâmica artística do Brasil.
+          </p>
+          <p class="section__text">
+            Este site é fictício, mas inspirado na atmosfera real da cidade e na estética contemporânea da cerâmica local.
+          </p>
+        </div>
+
+        <div class="section__media reveal-right" style="--delay:0.1s;">
+          <div class="map-placeholder">
+            
+            <iframe class="localizacao__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23591.59531781854!2d-44.978040084845446!3d-23.073165081864698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9d7ce47f825ea7%3A0xb0e1ed8f9db1d15a!2sCunha%2C%20SP%2C%2012530-000!5e1!3m2!1spt-BR!2sbr!4v1764124717664!5m2!1spt-BR!2sbr"
+              width="1005" 
+              height="450" 
+              style="border:0; border-radius:6px;"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section--contato">
+      <div class="container section__inner--centered">
+
+        <h2 class="section__title reveal-up">Visite ou entre em contato</h2>
+        <p class="section__subtitle reveal-up" style="--delay:0.1s;">
+          Atendimento por encomenda e visitas agendadas.
+        </p>
+
+        <a
+          href="https://wa.me/5511999999999"
+          class="btn btn--primary btn--large reveal-up"
+          style="--delay:0.2s;"
+        >
+          WhatsApp – Falar com o ateliê
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text reveal-up">Neblina &amp; Barro – Cerâmica Contemporânea</p>
+      <p class="footer__text footer__text--muted reveal-up" style="--delay:0.1s;">
+        © 2025 – Site fictício desenvolvido para portfólio.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
