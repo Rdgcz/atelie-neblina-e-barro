@@ -329,9 +329,12 @@ body {
 ====================================================================== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  text-align: center;
   color: #fff;
   background: linear-gradient(135deg, #2F2F2F 0%, #5A3E36 100%);
   overflow: hidden;
@@ -343,39 +346,84 @@ body {
   inset: 0;
   background: url('assets/img/hero-bg.webp') center/cover no-repeat;
   opacity: 0.9;
+  z-index: -2;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 10% 20%, rgba(0, 0, 0, 0.45) 0%, transparent 40%),
-              linear-gradient(135deg, rgba(47, 47, 47, 0.7) 0%, rgba(90, 62, 54, 0.5) 100%);
+  background: linear-gradient(
+    rgba(28, 22, 17, 0.2),
+    rgba(28, 22, 17, 0.45)
+  );
+  z-index: -1;
 }
 
 .hero__content {
   position: relative;
-  max-width: min(700px, 90%);
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   padding: 7rem 1.25rem 4rem;
+  z-index: 2;
 }
 
 .hero__title {
   font-family: var(--fonte-titulo);
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
 
 .hero__subtitle {
   font-size: clamp(1.0625rem, 2.5vw, 1.375rem);
-  margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.4rem;
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.6;
   font-weight: 400;
 }
+
+.hero__cta {
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 0.55rem;
+  transition: 0.25s ease;
+}
+
+.hero__cta:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+
+.hero__image--aria {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 78vh;
+    padding: 2rem 1.4rem;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+}
+
 
 /* ======================================================================
    SOBRE SECTION
@@ -410,6 +458,15 @@ body {
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
   filter: saturate(1.05);
 }
+
+.microcopy {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--cor-cinza-medio);
+  font-size: 0.95rem;
+}
+
 
 /* ======================================================================
    GALERIA SECTION
@@ -477,6 +534,13 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1024px) {
+  .galeria__grid {
+    gap: 1.2rem;
+  }
+}
+
 
 /* ======================================================================
    PROCESSO SECTION
@@ -586,6 +650,7 @@ body {
   padding: 3rem 1.5rem 2rem;
   color: #F4F0EB;
   margin-top: 2rem;
+  text-align: center;
 }
 
 .footer__content {

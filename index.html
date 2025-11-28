@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <title>Ateliê Neblina &amp; Barro – Cerâmica Contemporânea em Cunha/SP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Ateliê Neblina &amp; Barro – peças de cerâmica contemporânea criadas entre as montanhas e a neblina de Cunha/SP. Peças orgânicas, feito à mão, em pequena escala.">
-
+  <meta name="description" content="Ateliê Neblina & Barro — Cerâmica contemporânea criada entre montanhas, neblina e processos artesanais. Peças únicas com estética orgânica e atemporal.">
+  <meta property="og:title" content="Ateliê Neblina & Barro — Cerâmica Contemporânea">
+  <meta property="og:description" content="Peças orgânicas criadas entre montanhas e neblina. Cerâmica contemporânea de estética natural.">
+  <meta property="og:image" content="assets/img/og-image.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rdgcz.github.io/atelie-neblina-e-barro/">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/favicon/favicon-180.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
 </head>
@@ -44,29 +49,34 @@
   <main id="topo">
 
     <!-- HERO -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-labelledby="hero-titulo" aria-describedby="hero-subtitulo">
+      <img src="assets/img/hero-bg.webp"
+          alt="Peças de cerâmica sob luz quente sobre uma estante de madeira."
+        class="hero__image--aria">
       <div class="hero__overlay"></div>
-      <div class="container hero__content">
-        <h1 class="hero__title reveal-up">Ateliê Neblina &amp; Barro</h1>
-        <p class="hero__subtitle reveal-up">Peças orgânicas criadas entre montanhas e silêncio.</p>
-        <a href="#sobre" class="btn btn--primary reveal-up" style="--delay:0.15s;">Conheça o ateliê</a>
+      
+      <div class="container hero__content reveal-up" style="--delay:0.05s;">
+        <h1 id="hero-titulo" class="hero__title">Ateliê Neblina &amp; Barro</h1>
+        <p id="hero-subtitulo" class="hero__subtitle">Peças orgânicas criadas entre montanhas e silêncio.</p>
+        <a href="#sobre" class="btn btn--primary hero__cta" style="--delay:0.15s;">Conheça o ateliê</a>
       </div>
     </section>
 
     <!-- SOBRE -->
-    <section id="sobre" class="section section--sobre">
+    <section id="sobre" class="section section--sobre" aria-labelledby="titulo-sobre">
       <div class="container section__inner section__inner--two-columns">
 
         <div class="section__media">
           <img
             src="assets/img/sobre.webp"
-            alt="Peças de cerâmica artesanais"
+            alt="Artesão moldando argila no torno de cerâmica."
             class="section__image reveal-left"
+            loading="lazy"
           >
         </div>
 
         <div class="section__content reveal-right" style="--delay:0.1s;">
-          <h2 class="section__title">Sobre o ateliê</h2>
+          <h2 class="section__title" id="titulo-sobre">Sobre o ateliê</h2>
           <p class="section__text">
             Inspirado pela neblina constante das montanhas de Cunha, o Ateliê Neblina &amp; Barro cria peças que
             valorizam o silêncio, o tempo e a imperfeição orgânica.
@@ -76,16 +86,16 @@
             são objetos com presença, textura e identidade única.
           </p>
         </div>
-
       </div>
+      <p class="microcopy">Cada peça nasce do encontro entre tempo lento e matéria viva.</p>
     </section>
 
     <!-- GALERIA -->
-    <section id="galeria" class="section">
+    <section id="galeria" class="section" aria-labelledby="titulo-galeria">
       <div class="container">
 
         <header class="section__header reveal-up">
-          <h2 class="section__title">Coleção – Peças e Texturas</h2>
+          <h2 class="section__title" id="titulo-galeria">Coleção – Peças e Texturas</h2>
           <p class="section__subtitle">
             Uma seleção de superfícies orgânicas, tons neutros e queimas naturais.
           </p>
@@ -93,28 +103,28 @@
 
         <div class="gallery">
           <figure class="gallery__item reveal-up" style="--delay:0.0s;">
-            <img src="assets/img/peca-01.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-01.webp" alt="Vaso artesanal em tom terroso" class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.05s;">
-            <img src="assets/img/peca-02.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-02.webp" alt="Bowl em tom marfim e acabamento brilhante" class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.1s;">
-            <img src="assets/img/peca-03.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-03.webp" alt="Prato orgânico de cerâmica com bordas irregulares e textura natural." class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.15s%;">
-            <img src="assets/img/peca-04.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-04.webp" alt="Conjunto de pequenos vasos artesanais em tons terrosos e marfim e acabamento fosco." class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.2s;">
-            <img src="assets/img/peca-05.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-05.webp" alt="Escultura abstrata de cerâmica com linhas curvas e superfície aveludada." class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.25s;">
-            <img src="assets/img/peca-06.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-06.webp" alt="Par de xícaras minimalistas em argila quente e acabamento fosco." class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.25s;">
-            <img src="assets/img/peca-07.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-07.webp" alt="Centro de mesa escultórico de cerâmica com curvas fluidas e acabamento fosco." class="gallery__image" loading="lazy">
           </figure>
           <figure class="gallery__item reveal-up" style="--delay:0.25s;">
-            <img src="assets/img/peca-08.webp" alt="" class="gallery__image">
+            <img src="assets/img/peca-08.webp" alt="" class="gallery__image" loading="lazy">
           </figure>
         </div>
 
@@ -122,17 +132,17 @@
     </section>
 
     <!-- PROCESSO -->
-    <section id="processo" class="section">
+    <section id="processo" class="section" aria-labelledby="titulo-processo">
       <div class="container">
 
         <header class="section__header reveal-up">
-          <h2 class="section__title">Processo de criação</h2>
+          <h2 class="section__title" id="titulo-processo">Processo de criação</h2>
           <p class="section__subtitle">Um caminho entre argila, gesto e fogo.</p>
         </header>
 
         <div class="steps">
           <article class="step reveal-left" style="--delay:0.0s;">
-            <img src="assets/img/processo-01.webp" alt="Argila natural" class="step__image">
+            <img src="assets/img/processo-01.webp" alt="Conjunto de blocos de argila empilhados sobre mesa de madeira." class="step__image" loading="lazy">
             <h3 class="step__title">01 — A argila</h3>
             <p class="step__text">
               Seleção de argilas naturais com textura fina e tons terrosos característicos da região.
@@ -140,7 +150,7 @@
           </article>
 
           <article class="step reveal-right" style="--delay:0.1s;">
-            <img src="assets/img/processo-02.webp" alt="Torno de cerâmica" class="step__image">
+            <img src="assets/img/processo-02.webp" alt="Mãos moldando argila no torno de cerâmica em rotação." class="step__image" loading="lazy">
             <h3 class="step__title">02 — Torno e modelagem</h3>
             <p class="step__text">
               As peças ganham forma lentamente, respeitando ritmo e gesto. Imperfeições são parte da linguagem.
@@ -148,7 +158,7 @@
           </article>
 
           <article class="step reveal-left" style="--delay:0.2s;">
-            <img src="assets/img/processo-03.webp" alt="Forno cerâmico" class="step__image">
+            <img src="assets/img/processo-03.webp" alt="Prateleira de forno de cerâmica com peças sendo queimadas." class="step__image" loading="lazy">
             <h3 class="step__title">03 — Queima e finalização</h3>
             <p class="step__text">
               No forno, a argila se transforma. Manchas e nuances surgem de forma natural e imprevisível.
@@ -160,12 +170,12 @@
     </section>
 
     <!-- LOCALIZAÇÃO -->
-    <section id="localizacao" class="section">
+    <section id="localizacao" class="section" aria-labelledby="titulo-localizacao">
       <div class="localizacao__container">
 
         <div class="section__content reveal-left">
-          <img src="assets/img/localizacao.webp" alt="Estrada de terra entre montanhas" class="localizacao__image">
-          <h2 class="section__title">Cunha, São Paulo</h2>
+          <img src="assets/img/localizacao.webp" alt="Estrada de terra entre montanhas cobertas de neblina em Cunha, São Paulo." class="localizacao__image" loading="lazy">
+          <h2 class="section__title" id="titulo-localizacao">Cunha, São Paulo</h2>
           <p class="section__text">
             Entre montanhas e neblina, Cunha é um dos principais polos de cerâmica artística do Brasil.
           </p>
@@ -183,6 +193,7 @@
               style="border:0; border-radius:6px;"
               allowfullscreen="" 
               loading="lazy" 
+              aria-label="Mapa da cidade de Cunha, São Paulo"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
@@ -192,10 +203,10 @@
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section section--contato">
+    <section id="contato" class="section section--contato" aria-labelledby="titulo-contato">
       <div class="container section__inner--centered">
-        <h2 class="section__title reveal-up">Agende sua visita</h2>
-        <a href="https://wa.me/5512999999999" class="btn btn--primary btn--large">
+        <h2 class="section__title reveal-up" id="titulo-contato">Agende sua visita</h2>
+        <a href="https://wa.me/5512999999999" class="btn btn--primary btn--large" aria-label="Abrir conversa no WhatsApp com o Ateliê Neblina & Barro">
           <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" style="margin-right:8px">
           <path d="M16.001 2.666c-7.363 0-13.334 5.97-13.334 13.334a13.2 13.2 0 0 0 1.946 6.822L2.667 29.334l6.712-1.973a13.31 13.31 0 0 0 6.622 1.766h.001c7.364 0 13.333-5.97 13.333-13.333s-5.969-13.334-13.334-13.334zm0 24.889h-.001a11.52 11.52 0 0 1-5.888-1.61l-.422-.25-3.982 1.17 1.21-3.878-.275-.399a11.53 11.53 0 0 1-1.793-6.168c0-6.364 5.169-11.533 11.533-11.533S27.534 9.166 27.534 15.53 22.365 27.555 16 27.555zm6.245-8.387c-.334-.167-1.972-.973-2.28-1.083-.308-.112-.533-.167-.758.166-.225.333-.867 1.083-1.064 1.308-.197.225-.392.25-.725.084-.334-.167-1.408-.517-2.684-1.647-.992-.884-1.66-1.974-1.854-2.307-.193-.334-.02-.515.146-.681.15-.151.334-.392.501-.588.168-.196.223-.333.334-.558.112-.225.056-.417-.028-.583-.083-.167-.758-1.83-1.04-2.505-.273-.655-.553-.568-.758-.578l-.65-.012c-.225 0-.588.083-.897.417-.308.333-1.177 1.15-1.177 2.808 0 1.659 1.206 3.266 1.375 3.491.168.225 2.374 3.63 5.754 4.922.805.347 1.433.554 1.922.708.807.257 1.543.221 2.124.134.649-.097 1.972-.806 2.251-1.585.279-.78.279-1.45.195-1.585-.083-.134-.308-.216-.641-.384z"/>
           </svg>
